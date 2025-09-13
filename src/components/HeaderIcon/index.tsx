@@ -11,15 +11,17 @@ const HeaderIcon = ({linkClass, imgClass}:HeaderIconTypes) => {
   return (
     <Link href="/" className={`${linkClass}`}>
      
-        <Image
-          src="/images/logo/SteamWrecked_LOGO.png"
-          alt="Steam Wrecked Logo"
-          width={0}
-          height={0}
-          sizes='100vw'
-          className={`${imgClass}`}
-        />
-    
+       <Image
+  src="/images/logo/SteamWrecked_LOGO.png"
+  alt="Steam Wrecked Logo"
+  width={0}
+  height={0}
+  sizes='100vw'
+  className={`${imgClass}`}
+  data-testid="header-logo"
+/>
+
+   
     </Link>
   );
 };
